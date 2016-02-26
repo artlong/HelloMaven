@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+apply plugin:'application'
+
+mainClassName = "Hello"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'commons-logging', name: 'commons-logging', version: '1.1.1'
+    compile group: 'log4j', name: 'log4j', version: '1.2.16'
+    compile group: 'javax.persistence', name: 'persistence-api', version: '1.0'
+    testCompile 'junit:junit:4.+'
+}
